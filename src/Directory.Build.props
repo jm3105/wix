@@ -7,6 +7,7 @@
     <EnableSourceLink Condition=" '$(NCrunch)' == '1' ">false</EnableSourceLink>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
     <NoWarn>$(NoWarn);MSB3026</NoWarn>
+    <NuGetAudit>false</NuGetAudit>
 
     <ProjectName Condition=" '$(ProjectName)' == '' ">$(MSBuildProjectName)</ProjectName>
     <RootBuildFolder>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\build\))</RootBuildFolder>
